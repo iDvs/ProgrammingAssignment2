@@ -8,7 +8,7 @@ makeCacheMatrix <- function(x = matrix()) {
     
     m <- NULL        # set M NULL
     set <- function(y) {
-        x <<- y          # Create obj. x = y in the function "set" environment
+        x <<- y      # Create obj. x = y in the function "set" environment
         m <<- NULL   # Create NULL m variable in func. 'set"
     }
     get <- function() x   # get x matrix
@@ -23,7 +23,7 @@ makeCacheMatrix <- function(x = matrix()) {
 ## Write a short comment describing this function
 
 cacheSolve <- function(x, ...) {
-        ## Return a matrix that is the inverse of 'x'
+    ## Return a matrix that is the inverse of 'x'
     m <- x$getsolve()
     if ((!is.null(m))&(identical(m,x))) {  #check  calculating and difference
         message("getting cached data")
